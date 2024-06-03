@@ -1,0 +1,24 @@
+Prompting Techniques
+- For a specific CWE, most of these prompting techniques can easily be applied to a pretrained model given a robust dataset of vunerabilities.
+- Pros: These are fairly simple to apply because we are using the pretrained model for this method.
+- Cons: A few of these techniques require a good dataset to give the prompt some examples. Additionally this method doesn't seem as robust as others.
+
+Fine-Tuning
+- Given a large vunerability dataset, we can leverege any of the fine-tuning techniques to cater the model to the problem of identifying vunerabilities.
+- Pros: Because the model is trained on the specific dataset, it has the highest potential to detect real world vunerabilities.
+- Cons: This can be a very lengthy process and requires a large amount of data. There are also issues such as overfitting and lengthy training time to think about.
+
+Function-Calling and Tools
+- If we have a very specific CVE or as part of detecting a vunerability, we need some very specific information about the code, we can create a tool to extract this for us.
+- Pros: For this very specific function, having defined code will always be more consistent and reliable.
+- Cons: Often these issues will not be generalizable, so function-calling will rarely be directly applicable for a any one CVE.
+
+RAG
+- We can use our dataset of vunerabilities as the data store for the RAG in order for the model to verify its answer to the prompt about CWE's.
+- Pros: It will allow the model to be up to date even with the rapidly changing CWE landscape.
+- Cons: This again requires us to create the dataset, and expand it if it isn't large enough.
+
+Agents
+- Leveraging the hierarchial nature of CWE's, we can create agents for specific types of CWE's.
+- Pros: Allowing the different agents to specialize in different vunerability fields could prove to make each agent more accurate than the model as a whole.
+- Cons: This again would require more specific tests for each CWE. Also it will take a long time to train each CWE.
