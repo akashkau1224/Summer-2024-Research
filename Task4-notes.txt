@@ -1,0 +1,28 @@
+CodeAct
+
+Code Act allows the LLM to create executable elements of code. This tool works on many different formats (SQL, Python, etc.)
+
+LMQL
+
+Uses partial querying and clever decoder tricks to optimize computer performance and latency when solving large problems.
+
+AutoGen
+
+Microsoft program that allows complex multi-agent interaction for LLMs.
+
+DSPy
+
+Optimization on using LLMs by seperating the flow of programs into modules from the specific parameters and weights, 
+streamlining the whole process.
+
+SWE Agents
+
+Agent that fixes software issues directly in github repositories.
+
+AutoCodeRover
+
+Agent that offers automated code improvement using an abstract syntax tree model.
+
+SGLang
+
+Improves front-end interaction with the LLM and provides high performance through clever cache use.
