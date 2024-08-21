@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../CodeQL/codeql-bundle/vscode-codeql-starter/ql"
+		}
+	],
+	"settings": {}
+}
