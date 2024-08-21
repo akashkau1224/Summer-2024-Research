@@ -1,0 +1,35 @@
+.highlight:not(.convo) {
+    color: green;
+    background-color: black;
+}
+
+.convo {
+    color: black;
+    width: 90vw;
+}
+
+pre {
+    width: 90vw;
+    white-space: pre-wrap;
+    color: red;
+    padding: 50px;
+    font-size: 16px;
+}
+
+.thought {
+    color: blue;
+    border: solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+}
+
+.thought .title {
+    color: blue;
+}
