@@ -1,35 +1,74 @@
+
+/*code blocks*/
 .highlight:not(.convo) {
     color: green;
     background-color: black;
+    padding: 20px;
 }
 
+/*conversation with the LLM*/
 .convo {
     color: black;
-    width: 90vw;
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* Ensure long words are broken */
+    white-space: pre-wrap;
 }
 
+/*area reserved for log file information*/
 pre {
-    width: 90vw;
     white-space: pre-wrap;
     color: red;
-    padding: 50px;
+    padding: 30px;
     font-size: 16px;
+    grid-area: "main";
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* Ensure long words are broken */
+    margin: 0px;
 }
 
+/*LLM thoughts*/
 .thought {
     color: blue;
     border: solid blue;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* Ensure long words are broken */
+    
 }
 
+/*Section Headers*/
 .title {
     font-size: 24px;
     margin: 10px;
     text-align: center;
 }
-
 .thought .title {
     color: blue;
+}
+
+/*Whole Container*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar main";
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*Log Directory Info*/
+#sidebar {
+    white-space: pre-wrap;
+    grid-area: "sidebar";
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* Ensure long words are broken */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 0px;
+}
+
+/*Log Directory Sidebar uses ul*/
+ul {
+    list-style-type: none;
+    line-height: 1.5;
 }
